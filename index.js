@@ -145,7 +145,7 @@ document.getElementById("get-btn").addEventListener("click", (event) => {
       const createBtn = document.createElement("button");
       createBtn.className =
         "btn btnNew text-[#422AD5] border-[#422AD5] py-2 px-4 hover:bg-[#422AD5] hover:text-white";
-      createBtn.innerHTML = `<i class="fa-solid fa-book-open"></i> lesson-${value.level_no}`;
+      createBtn.innerHTML = `<i class="fa-solid fa-book-open"></i>${value.lessonName}`;
   
       createBtn.onclick = function () {
         loadSingleLesson(value.level_no);
