@@ -34,22 +34,228 @@
     </style>
   </head>
   <body class="font-poppins">
-    <header>
-        <nav class="flex justify-between border-b-1 border-b-gray-300 w-full px-7 py-3 items-center">
-                <div class="logo flex items-center">
-                    <h1>English</h1>
-                    <img src="./assets/logo.png" alt="">
-                    <h1>জানালা</h1>
-                </div>
-                <div class="nav-btns flex gap-3">
-                    <button class="btn">FAQ</button>
-                    <button class="btn">Learn</button>
-                    <button class="btn">Logout</button>
-                </div>
-        </nav>
+    <header class="defaultHidden bg-[#c6bdbd17] mb-10">
+      <nav class="fixed top-0 w-full bg-slate-100 border-b-1 border-b-gray-300 z-10 flex justify-between mx-auto py-3 px-6">
+        <div class="logo cursor-pointer flex items-center">
+          <h1 class="text-xl font-semibold">English</h1>
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="font-siliguri text-xl font-normal">জানালা</h1>
+        </div>
+        <div class="nav-btn flex gap-4">
+          <a href="#faq"
+            ><button
+              id="faq-btn"
+              class="btn text-[#422AD5] border-[#422AD5] py-2 px-4 hover:bg-[#422AD5] hover:text-white"
+            >
+              <i class="fa-solid fa-circle-question"></i>FAQ
+            </button></a
+          >
+          <button id="learn-btn"
+            class="btn text-[#422AD5] border-[#422AD5] py-2 px-4 hover:bg-[#422AD5] hover:text-white"
+          >
+            <i class="fa-solid fa-book-open"></i>Learn
+          </button>
+          <button id="logout"
+            class="btn text-[#422AD5] border-[#422AD5] py-2 px-4 hover:bg-[#422AD5] hover:text-white"
+          >
+            <i class="fa-solid fa-right-from-bracket"></i>Logout
+          </button>
+        </div>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section
+        id="banner"
+        class="defaultBlock banner flex justify-between w-10/12 mx-auto items-center"
+      >
+        <div class="english-title flex-1">
+          <h1 class="text-3xl font-bold">
+            <span class="text-[#00BCFF]">English</span> is Easy
+          </h1>
+          <p class="font-siliguri py-3">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+            আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+            অন্য একটি Level এ
+          </p>
+          <div class="flex w-6/12 gap-2 pb-2 flex-col">
+            <input
+              id="user-name"
+              class="pl-2 py-1 rounded-sm border-slate-400"
+              type="text"
+              placeholder="Enter Your Name"
+            />
+            <input
+              id="user-password"
+              class="pl-2 py-1 rounded-sm border-slate-400"
+              type="password"
+              placeholder="Enter Login Code(123456)"
+            />
+          </div>
+          <button id="get-btn" class="btn bg-[#422AD5] text-white">
+            Get Started
+          </button>
+        </div>
+        <div class="banner-img flex-1">
+          <img src="./assets/hero-student.png" alt="" />
+        </div>
+      </section>
+      <section id="mainLearnSection"
+        class="defaultHidden pt-24 w-10/12 mx-auto text-center"
+      >
+        <h1 class="text-3xl font-bold">
+          <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+        </h1>
+        <div id="lesson-btn" class="flex gap-3 justify-center mt-10"></div>
+        <div id="lesson-cards" class="mt-8 p-7 rounded-md bg-[#F8F8F8]">
+          <div id="spinner" class="">
+            
+          </div>
+          <div class="w-full text-center py-10">
+            <h2 class="text-lg font-medium">
+              আপনি এখনো কোনো Lesson Select করেন নি।
+            </h2>
+            <h1 class="text-2xl font-semibold mt-2">
+              একটি Lesson Select করুন।
+            </h1>
+          </div>
+        </div>
+        <dialog
+          id="my_modal_5"
+          class="modal modal-bottom sm:modal-middle"
+        ></dialog>
+      </section>
+
+      <section id="faq" class="defaultHidden w-10/12 mx-auto ">
+        <h1 class="text-3xl text-center font-bold pb-20 pt-24">
+          <span class="text-[#00BCFF]">Frequently</span> Asked Questions
+        </h1>
+        <div class="space-y-4">
+          <div
+            class="collapse collapse-plus bg-slate-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-semibold">
+              1. What is the difference between var let const in js?
+            </div>
+            <div class="collapse-content text-sm">
+              <strong>Var:</strong> Var accessible throughout the entire
+              function where it's declared and we can reassign and redeclare var
+              in the same scope. Its a function-scoped. <br />
+              <strong>Const:</strong> We use const for values that will not
+              change and its a block-scoped like let. <br />
+              <strong>Let:</strong> We use let when we need to reassign a value
+              and it’s accessible only within the block {} where it's declared.
+              We can reassign let but cannot redeclare it in the same scope.
+            </div>
+          </div>
+          <div
+            class="collapse collapse-plus bg-slate-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              2. What is the difference between map() forEach() and filter() in
+              js?
+            </div>
+            <div class="collapse-content text-sm">
+              <strong>map():</strong> map() creates a new array by applying a
+              function to each element in the original array. <br />
+              <strong>forEach():</strong> forEach() executes a function on each
+              element in the array but does not return a new array. <br />
+              <strong>filter():</strong> filter() creates a new array with only
+              the elements that satisfy a given condition (returns true).
+            </div>
+          </div>
+          <div
+            class="collapse collapse-plus bg-slate-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              3. What are arrow functions, and how are they different from
+              regular functions?
+            </div>
+            <div class="collapse-content text-sm">
+              <strong>Arrow functions (=>)</strong> in JavaScript are a modern
+              way to write functions introduced in ES6. They provide a more
+              concise syntax and behave differently from regular functions in a
+              few key ways. it cannot be used as a constructor also no prototype
+              property. <br />
+              <strong>Regular functions</strong> its Longer also it can be used
+              as a constructor and it has prototype property,
+            </div>
+          </div>
+          <div
+            class="collapse collapse-plus bg-slate-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              4. How do javascript promises work?
+            </div>
+            <div class="collapse-content text-sm">
+              <strong>Promises</strong> are used to handle asynchronous
+              operations — like fetching data from an API, reading a file, or
+              doing any task that takes time to complete — without blocking the
+              execution of other code.
+            </div>
+          </div>
+          <div
+            class="collapse collapse-plus bg-slate-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">
+              5. How do javascript closure work?
+            </div>
+            <div class="collapse-content text-sm">
+              <strong>A closure is</strong> when a function remembers the
+              variables from its outer scope even after the outer function has
+              finished executing. also we can say its A function inside another
+              function that function can access it own scope also variable from
+              the outer function's scope and global scope.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-20 py-24 bg-[#c6bdbd17]">
+      <div class="flex items-end w-11/12 mx-auto justify-between">
+        <div>
+          <div class="footer-logo flex cursor-pointer items-center">
+            <h1 class="text-xl font-semibold">English</h1>
+            <img src="./assets/logo.png" alt="" />
+            <h1 class="font-siliguri text-xl font-normal">জানালা</h1>
+          </div>
+          <div>
+            <h1 class="font-siliguri text-xl font-medium py-2">ইংরেজি শিখুন সহজে</h1>
+            <p>Providing ED-Tech Applications since 2025</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <h1 class="text-[#18181B] font-semibold">Follow us</h1>
+          <div class="icons flex items-center gap-3 pt-2">
+            <a target="_blank" href="https://www.facebook.com/"
+              ><img class="cursor-pointer" src="./assets/fb-thumb.png" alt=""
+            /></a>
+            <a target="_blank" href="https://www.youtube.com/">
+              <img
+                class="cursor-pointer"
+                src="./assets/youtube-thumb.png"
+                alt=""
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/"
+              ><img
+                class="cursor-pointer"
+                src="./assets/instagram-thumb.png"
+                alt=""
+            /></a>
+            <a target="_blank" href="https://www.github.com/"
+              ><img
+                class="cursor-pointer"
+                src="./assets/github-thumb.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
