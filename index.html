@@ -23,7 +23,8 @@
       src="https://kit.fontawesome.com/1632af40cc.js"
       crossorigin="anonymous"
     ></script>
-    
+    <!-- sweetAlert cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
@@ -34,7 +35,7 @@
     </style>
   </head>
   <body class="font-poppins">
-    <header class="defaultHidden bg-[#c6bdbd17] mb-10">
+    <header class="defaultHidden hidden bg-[#c6bdbd17] mb-10">
       <nav class="fixed top-0 w-full bg-slate-100 border-b-1 border-b-gray-300 z-10 flex justify-between mx-auto py-3 px-6">
         <div class="logo cursor-pointer flex items-center">
           <h1 class="text-xl font-semibold">English</h1>
@@ -66,7 +67,7 @@
     <main>
       <section
         id="banner"
-        class="defaultBlock banner flex justify-between w-10/12 mx-auto items-center"
+        class="defaultBlock banner flex justify-between mt-24 w-10/12 mx-auto items-center"
       >
         <div class="english-title flex-1">
           <h1 class="text-3xl font-bold">
@@ -95,12 +96,12 @@
             Get Started
           </button>
         </div>
-        <div class="banner-img flex-1">
-          <img src="./assets/hero-student.png" alt="" />
+        <div class="banner-img flex-1 items-center justify-end flex">
+          <img src="./assets/faisalwheelpic_dotted_more.png" alt="img loading" />
         </div>
       </section>
       <section id="mainLearnSection"
-        class="defaultHidden pt-24 w-10/12 mx-auto text-center"
+        class="defaultHidden hidden pt-24 w-10/12 mx-auto text-center"
       >
         <h1 class="text-3xl font-bold">
           <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
@@ -125,7 +126,7 @@
         ></dialog>
       </section>
 
-      <section id="faq" class="defaultHidden w-10/12 mx-auto ">
+      <section id="faq" class="defaultHidden hidden w-10/12 mx-auto ">
         <h1 class="text-3xl text-center font-bold pb-20 pt-24">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
         </h1>
@@ -225,28 +226,28 @@
           </div>
           <div>
             <h1 class="font-siliguri text-xl font-medium py-2">ইংরেজি শিখুন সহজে</h1>
-            <p>Providing ED-Tech Applications since 2025</p>
+            <p><small class="text-xs">Developed by <a href="https://github.com/ismail-dev-code">ismail <span id="year"></span></a></small></p>
           </div>
         </div>
         <div class="social-media">
           <h1 class="text-[#18181B] font-semibold">Follow us</h1>
           <div class="icons flex items-center gap-3 pt-2">
-            <a target="_blank" href="https://www.facebook.com/"
+            <a target="_blank" href="https://web.facebook.com/m.ismail.hossain24/"
               ><img class="cursor-pointer" src="./assets/fb-thumb.png" alt=""
             /></a>
-            <a target="_blank" href="https://www.youtube.com/">
+            <a target="_blank" href="https://www.youtube.com/@learnwithfaisal1801">
               <img
                 class="cursor-pointer"
                 src="./assets/youtube-thumb.png"
                 alt=""
             /></a>
-            <a target="_blank" href="https://www.instagram.com/"
+            <a target="_blank" href="https://www.linkedin.com/in/ismail-hossain24/"
               ><img
                 class="cursor-pointer"
                 src="./assets/instagram-thumb.png"
                 alt=""
             /></a>
-            <a target="_blank" href="https://www.github.com/"
+            <a target="_blank" href="https://github.com/ismail-dev-code"
               ><img
                 class="cursor-pointer"
                 src="./assets/github-thumb.png"
