@@ -28,7 +28,7 @@ A simple and modern **English learning web app** built with **HTML**, **Tailwind
 ## Installation & Setup
 1. Clone the repository  
 ```bash
-git clone https://github.com/your-username/english-janala.git
+git clone https://github.com/ismail-dev-code/english-janala.git
 cd english-janala
 ```
 
