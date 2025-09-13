@@ -21,7 +21,7 @@ A simple and modern **English learning web app** built with **HTML**, **Tailwind
 │── assets/ # Images and icons (logo, social media, etc.)
 │── index.html # Main HTML file
 │── style.css (optional) # Tailwind or custom styles
-│── script.js (optional) # JS for login, lessons, interactivity
+│── index.js # JS for login, lessons, interactivity
 │── README.md # Project documentation
 
 ```
@@ -30,6 +30,7 @@ A simple and modern **English learning web app** built with **HTML**, **Tailwind
 ```bash
 git clone https://github.com/your-username/english-janala.git
 cd english-janala
+```
 
 **Author**
 
